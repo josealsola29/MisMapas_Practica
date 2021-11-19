@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:textSize="30sp"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="64dp"
+        android:text="Elija un mapa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnMap1"
+        android:layout_width="181dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="152dp"
+        android:onClick="irMapa"
+        android:text="btnMap1"
+        app:layout_constraintEnd_toStartOf="@+id/btnMap2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnMap2"
+        android:layout_width="181dp"
+        android:layout_height="152dp"
+        android:onClick="irMapa"
+        android:text="btnMap2"
+        app:layout_constraintBottom_toBottomOf="@+id/btnMap1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnMap1"
+        app:layout_constraintTop_toTopOf="@+id/btnMap1"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnMap3"
+        android:layout_width="181dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="56dp"
+        android:onClick="irMapa"
+        android:text="btnMap3"
+        app:layout_constraintEnd_toStartOf="@+id/btnMap4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMap1" />
+
+    <Button
+        android:id="@+id/btnMap4"
+        android:layout_width="181dp"
+        android:layout_height="152dp"
+        android:onClick="irMapa"
+        android:text="btnMap4"
+        app:layout_constraintBottom_toBottomOf="@+id/btnMap3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnMap3"
+        app:layout_constraintTop_toTopOf="@+id/btnMap3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
